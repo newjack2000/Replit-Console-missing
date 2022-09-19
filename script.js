@@ -23,11 +23,11 @@ function playGuessingGame(x, y) {
     } else if (userGuess > numToGuess) {
       guesses++;
       promptText = "Please enter a number";
-      userGuess = prompt(userGuess + " is too large. Guess a smaller number.");
+      //userGuess = prompt(userGuess + " is too large. Guess a smaller number.");
     } else if (userGuess < numToGuess) {
       guesses++;
       promptText = "Please enter a number";
-      userGuess = prompt(userGuess + " is too small. Guess a smaller number.");
+      //userGuess = prompt(userGuess + " is too small. Guess a smaller number.");
     }  else {
       promptText = "This is not working correctly";
     }
