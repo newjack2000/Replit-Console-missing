@@ -23,7 +23,7 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
 
     else if (num === numToGuess) {
       console.log("The guess count is: " + guesses)
-      return guesses
+      guesses++
     }
 
     else if (num < numToGuess) {
@@ -31,7 +31,7 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
       console.log("The guess count is: " + guesses)
       //promptText =  "Guess a larger number."
       //num = prompt(promptText)
-      return guesses
+      guesses++
     }
 
     else if (num > numToGuess) {
@@ -39,7 +39,7 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
       console.log("The guess count is: " + guesses)
       //promptText =  "Guess a smaller number."
       //num = prompt(promptText)
-      return guesses
+      guesses++
     }
 
   }
