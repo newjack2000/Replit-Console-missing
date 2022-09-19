@@ -1,3 +1,44 @@
+function playGuessingGame(numToGuess, totalGuesses = 10){
+let prompText = "Enter a number between 1 and 100."
+
+// this section will be fo the loop.
+
+for(let guesses = 1; guesses < totalGuesses; guesses++) {
+let num = prompt(promptText)
+
+// check if the user does not enter anything and exists if nothing is entered
+
+if (num == null) {
+return 0
+}
+
+// checks to see if the value the enter is a number
+
+else if (num == "" || isNan(num)){
+prompText = "Please enter a number:"
+guesses = guesses - 1
+}
+
+else if (num === numToGuess) {
+return guesses
+}
+
+else if (num > numToGuess) {
+console.log(num + "is too small. Guess a larger number.");
+}
+
+else if (num < numToGuess) {
+console.log(num + "is too large. Guess a smaller number.");
+}
+
+return;
+}
+}
+
+/* triying wity new code only with function, skip calling function
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 function playGuessingGame(x, y) {
   
   let promptText = "Enter a number between 1 and 100."
@@ -43,6 +84,8 @@ function playGuessingGame(x, y) {
   // totalGuesses = prompt("How many guesses would you like to make?")
 
   playGuessingGame(randomNum, totalGuesses);
+
+  */
 
 // this is the code before the update
 /*
