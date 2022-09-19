@@ -23,12 +23,16 @@ else if (num === numToGuess) {
 return guesses
 }
 
-else if (num > numToGuess) {
-console.log(num + "is too small. Guess a larger number.");
+else if (num < numToGuess) {
+console.log(num + " is too small."
+promptText =  "Guess a larger number.";
+num = prompt(promptText)
 }
 
-else if (num < numToGuess) {
-console.log(num + "is too large. Guess a smaller number.");
+else if (num > numToGuess) {
+console.log(num + " is too large. Guess a smaller number.");
+promptText =  "Guess a larger number.";
+num = prompt(promptText)
 }
 
 return;
