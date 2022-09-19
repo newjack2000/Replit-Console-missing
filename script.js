@@ -14,7 +14,7 @@ return 0
 
 // checks to see if the value the enter is a number
 
-else if (num == "" || isNan(num)){
+else if (num == "" || isNaN(num)){
 promptText = "Please enter a number:"
 guesses = guesses - 1
 }
