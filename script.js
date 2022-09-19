@@ -23,24 +23,20 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
 
     else if (num === numToGuess) {
       console.log("The guess count is: " + guesses)
+      return guesses
     }
 
     else if (num < numToGuess) {
-      console.log(num + " is too small.")
+      console.log(num + " is too small. Guess a larger number.")
       console.log("The guess count is: " + guesses)
-      //promptText =  "Guess a larger number."
-      //num = prompt(promptText)
     }
 
     else if (num > numToGuess) {
-      console.log(num + " is too large.")
+      console.log(num + " is too large. Guess a smaller number")
       console.log("The guess count is: " + guesses)
-      //promptText =  "Guess a smaller number."
-      //num = prompt(promptText)
     }
 
   }
-
 
     return guesses;
   }
