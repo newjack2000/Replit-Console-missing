@@ -1,3 +1,5 @@
+// this is the code before the update
+
 function playGuessingGame(x, y) {
 
   let numToGuess = x;
