@@ -27,12 +27,14 @@ else if (num < numToGuess) {
   console.log(num + " is too small.")
   //promptText =  "Guess a larger number."
   //num = prompt(promptText)
+  return guesses
 }
 
 else if (num > numToGuess) {
   console.log(num + " is too large.")
   //promptText =  "Guess a smaller number."
   //num = prompt(promptText)
+  return guesses
   }
 
 
