@@ -42,7 +42,8 @@ function playGuessingGame(numToGuess, totalGuesses = 10) {
       return guesses
     }
 
+  }
+
 
     return;
   }
-}
